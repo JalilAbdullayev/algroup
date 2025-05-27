@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import facebook from "../assets/facebook.svg";
+import phone from "../assets/phone-yellow.svg";
+import instagram from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.svg";
+import twitter from "../assets/twitter.svg";
+import youtube from "../assets/youtube.svg";
+---
+
+<header class="bg-[#346E65] py-2 max-md:hidden max-md:px-5">
+  <div class="container flex items-center justify-end gap-5 mx-auto">
+    <div class="flex items-center gap-5">
+      <a href="https://www.facebook.com/" target="_blank">
+        <Image src={facebook} alt="facebook" loading="eager" />
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <Image src={linkedin} alt="linkedin" loading="eager" />
+      </a>
+      <a href="https://www.x.com/" target="_blank">
+        <Image src={twitter} alt="twitter" loading="eager" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <Image src={instagram} alt="instagram" loading="eager" />
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <Image src={youtube} alt="youtube" loading="eager" />
+      </a>
+    </div>
+    <div class="w-px bg-white h-9"></div>
+    <div class="flex items-center gap-3 text-base text-white">
+      <Image src={phone} alt="phone" loading="eager" />
+      <a href="tel:+994505553644">+994 50 555 36 44</a>
+    </div>
+  </div>
+</header>
