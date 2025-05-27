@@ -1,36 +1,37 @@
 ---
-import { Image } from "astro:assets";
-import facebook from "../assets/facebook.svg";
-import phone from "../assets/phone-yellow.svg";
-import instagram from "../assets/instagram.svg";
-import linkedin from "../assets/linkedin.svg";
-import twitter from "../assets/twitter.svg";
-import youtube from "../assets/youtube.svg";
+import { Icon } from "astro-icon/components";
 ---
 
 <header class="bg-[#346E65] py-2 max-md:hidden max-md:px-5">
   <div class="container flex items-center justify-end gap-5 mx-auto">
-    <div class="flex items-center gap-5">
+    <div
+      class="flex items-center gap-5 [&>a]:text-white [&>a]:hover:text-[#FFF34A] [&>a]:duration-300"
+    >
       <a href="https://www.facebook.com/" target="_blank">
-        <Image src={facebook} alt="facebook" loading="eager" />
+        <Icon name="ri:facebook-fill" size={24} />
       </a>
       <a href="https://www.linkedin.com/" target="_blank">
-        <Image src={linkedin} alt="linkedin" loading="eager" />
+        <Icon name="ri:linkedin-fill" size={24} />
       </a>
       <a href="https://www.x.com/" target="_blank">
-        <Image src={twitter} alt="twitter" loading="eager" />
+        <Icon name="ri:twitter-fill" size={24} />
       </a>
       <a href="https://www.instagram.com/" target="_blank">
-        <Image src={instagram} alt="instagram" loading="eager" />
+        <Icon name="ri:instagram-line" size={24} />
       </a>
       <a href="https://www.youtube.com/" target="_blank">
-        <Image src={youtube} alt="youtube" loading="eager" />
+        <Icon name="si:youtube-line" size={26} />
       </a>
     </div>
     <div class="w-px bg-white h-9"></div>
     <div class="flex items-center gap-3 text-base text-white">
-      <Image src={phone} alt="phone" loading="eager" />
-      <a href="tel:+994505553644">+994 50 555 36 44</a>
+      <a
+        href="tel:+994505553644"
+        class="flex items-center gap-3 hover:text-[#FFF34A] duration-300"
+      >
+        <Icon name="solar:phone-bold" size={24} color="#FFF34A" />
+        +994 50 555 36 44
+      </a>
     </div>
   </div>
 </header>
