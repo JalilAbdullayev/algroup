@@ -8,15 +8,15 @@ const year = new Date().getFullYear();
 <footer class="bg-[#363131] pt-7.5 md:pt-10 pb-14.5 md:pb-6 max-md:px-5">
   <div class="container mx-auto">
     <div class="flex items-center justify-between">
-      <div class="max-md:hidden">
+      <a href="/" class="max-md:hidden">
         <Image src={logo} alt="logo" width={180} height={180} loading="eager" />
-      </div>
-      <div class="flex flex-col items-end gap-14.5 md:gap-15 mt-7.5">
+      </a>
+      <div class="flex flex-col items-end gap-10.5 md:gap-11">
         <div>
           <a
             href="#"
-            download
-            class="border-[2px] rounded-sm border-[#346E65] text-[#346E65] hover:bg-[#346E65]/10 px-13 py-4 text-xl font-semibold tracking-wider duration-300"
+            download="kataloq"
+            class="border-[2px] rounded-sm border-[#346E65] text-[#346E65] hover:bg-[#346E65]/10 px-13 py-4 text-xl font-semibold tracking-wider duration-300 inline-block"
           >
             Kataloqu endir
           </a>
@@ -34,7 +34,7 @@ const year = new Date().getFullYear();
     </div>
     <hr class="bg-[#F9F9F9] border-none h-px max-md:mt-7.5" />
     <div
-      class="flex items-center justify-center md:justify-between text-sm md:text-base tracking-wider text-white pt-7"
+      class="flex items-center justify-center text-sm tracking-wider text-white md:justify-between md:text-base pt-7"
     >
       <div class="md:hidden"></div>
       <p class="font-[Montserrat]">&copy; {year} <a href="/">AL Group</a></p>
