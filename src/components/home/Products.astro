@@ -1,0 +1,25 @@
+---
+import Product from "../Product.astro";
+---
+
+<section class="py-12.5 md:pb-20 md:pt-15 max-md:px-5 container mx-auto">
+  <h2 class="text-xl font-semibold tracking-wider text-center md:text-2xl">
+    Məhsullarımız
+  </h2>
+  <div
+    class="grid grid-cols-2 md:grid-cols-4 mt-5 md:mt-3.5 max-md:mb-7.5 gap-9 md:gap-17.5"
+  >
+    <Product />
+    <Product />
+    <Product />
+    <Product />
+  </div>
+  <div class="text-center md:hidden">
+    <a
+      href="#"
+      class="text-[#346E65] underline text-sm font-medium tracking-wider"
+    >
+      Bütün məhsullar
+    </a>
+  </div>
+</section>

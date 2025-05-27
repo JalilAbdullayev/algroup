@@ -3,83 +3,40 @@ import { Image } from "astro:assets";
 import hero from "../../assets/hero.png";
 ---
 
-<section class="bg-[#F5F7F7] py-12.5">
+<section class="bg-[#F5F7F7] pt-1.5 pb-6 md:py-12.5 max-md:px-5">
   <div class="container mx-auto">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="grid items-center grid-cols-2">
-            <div class="flex flex-col gap-7.5">
-              <h2 class="text-2xl font-bold tracking-wider">
+          <div
+            class="grid items-center grid-cols-1 md:grid-cols-2 max-md:gap-2.5"
+          >
+            <div class="flex flex-col gap-1.5 md:gap-7.5 max-md:order-2">
+              <h2 class="text-sm font-bold tracking-wider md:text-2xl">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry
               </h2>
-              <div class="text-sm font-light tracking-wider text-[#363131]">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                </p>
+              <div
+                class="text-xs md:text-sm font-light tracking-wider text-[#363131]"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
               </div>
               <div>
                 <a
                   href="#"
-                  class="text-[#346E65] border border-[#346E65] rounded-sm py-5 px-25 inline-block text-xl font-medium tracking-wider"
+                  class="text-[#346E65] border border-[#346E65] rounded-sm py-3 md:py-5 px-14 md:px-25 inline-block text-sm md:text-xl font-medium tracking-wider hover:bg-[#346E65]/10 duration-300"
                 >
                   Ətraflı
                 </a>
               </div>
             </div>
             <div class="mx-auto">
-              <Image
-                src={hero}
-                alt="hero"
-                loading="eager"
-                width={495}
-                height={450}
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="grid items-center grid-cols-2">
-            <div class="flex flex-col gap-7.5">
-              <h2 class="text-2xl font-bold tracking-wider">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry
-              </h2>
-              <div class="text-sm font-light tracking-wider text-[#363131]">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  class="text-[#346E65] border border-[#346E65] rounded-sm py-5 px-25 inline-block text-xl font-medium tracking-wider"
-                >
-                  Ətraflı
-                </a>
-              </div>
-            </div>
-            <div class="mx-auto">
-              <Image
-                src={hero}
-                alt="hero"
-                loading="eager"
-                width={495}
-                height={450}
-              />
+              <Image src={hero} alt="hero" loading="eager" />
             </div>
           </div>
         </div>
