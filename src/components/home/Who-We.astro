@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import whoWe from "../../assets/who-we.jpg";
+---
+
+<section class="py-12.5 bg-[#F5F7F7]">
+  <div
+    class="container grid items-center grid-cols-1 mx-auto bg-white md:grid-cols-2"
+  >
+    <div class="px-2.5 md:px-9 max-md:order-2 max-md:pt-4 max-md:pb-7">
+      <h2 class="mb-5 text-lg font-semibold tracking-wider md:text-xl">
+        Biz kimik?
+      </h2>
+      <div class="text-base font-light tracking-wider mt-5 mb-7.5">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the
+        containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like including versions of Lorem Ipsum.
+      </div>
+      <div class="flex items-center gap-25">
+        <div>
+          <h3 class="text-2xl font-semibold text-[#346E65]">300</h3>
+          <h4 class="text-xs tracking-wider">Meyvə bağları</h4>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-[#346E65]">600</h3>
+          <h4 class="text-xs tracking-wider">İşçi heyəti</h4>
+        </div>
+      </div>
+    </div>
+    <div>
+      <Image src={whoWe} alt="who we are" loading="eager" class="max-md:rounded-md" />
+    </div>
+  </div>
+</section>
