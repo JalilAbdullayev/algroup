@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import bazaar from "../assets/bazaar.jpg";
+---
+
+<a href={bazaar.src} data-fancybox="gallery">
+  <Image src={bazaar} alt="bazaar" loading="eager" class="rounded-md" />
+</a>
+<script>
+  import { Fancybox } from "@fancyapps/ui";
+
+  Fancybox.bind('[data-fancybox="gallery"]');
+</script>
