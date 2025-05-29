@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import Heading from "../components/Heading.astro";
+import Layout from "../layouts/Layout.astro";
+import apple from "../assets/apple.png";
+import Product from "../components/Product.astro";
+---
+
+<Layout title="Alma">
+  <Heading title="Alma" />
+  <main
+    class="container mx-auto pt-12.5 lg:pt-15 pb-17.5 lg:pb-19 max-lg:px-5 flex flex-col gap-12.5"
+  >
+    <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-11">
+      <div>
+        <Image src={apple} alt="apple" loading="eager" />
+      </div>
+      <div class="flex flex-col tracking-wider gap-9 max-lg:text-center">
+        <h1 class="text-2xl font-semibold">Alma</h1>
+        <div class="text-base font-light text-[#363131]">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators on the Internet tend to repeat predefined
+          chunks as necessary, making this the first true generator on the
+          Internet.
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-7.5">
+      <h2 class="text-2xl font-semibold tracking-wider text-center">
+        Digər məhsullar
+      </h2>
+      <div class="grid grid-cols-1 gap-20 lg:grid-cols-4 md:grid-cols-2">
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+      </div>
+    </div>
+  </main>
+</Layout>

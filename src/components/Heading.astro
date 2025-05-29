@@ -11,9 +11,9 @@ const { title = "AL Group" } = Astro.props;
 
 <header class="bg-[#F5F7F7] max-lg:px-5 max-lg:pt-7.5">
   <div
-    class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-between flex-wrap"
+    class="container grid items-center justify-between grid-cols-1 mx-auto lg:grid-cols-2"
   >
-    <h2 class="text-2xl lg:text-3xl font-bold tracking-wider">{title}</h2>
+    <h1 class="text-3xl font-bold tracking-wider">{title}</h1>
     <div class="lg:w-97 w-58 lg:h-88 h-53 ms-auto lg:mx-auto">
       <Image src={hero} alt="hero" loading="eager" />
     </div>
