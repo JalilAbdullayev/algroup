@@ -14,6 +14,9 @@ importers:
       '@fancyapps/ui':
         specifier: ^5.0.36
         version: 5.0.36
+      '@iconify-json/basil':
+        specifier: ^1.2.2
+        version: 1.2.2
       '@iconify-json/ri':
         specifier: ^1.2.5
         version: 1.2.5
@@ -23,6 +26,9 @@ importers:
       '@iconify-json/solar':
         specifier: ^1.2.2
         version: 1.2.2
+      '@iconify-json/tdesign':
+        specifier: ^1.2.8
+        version: 1.2.8
       '@tailwindcss/vite':
         specifier: ^4.1.7
         version: 4.1.7(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1))
@@ -271,6 +277,9 @@ packages:
   '@floating-ui/utils@0.2.9':
     resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
 
+  '@iconify-json/basil@1.2.2':
+    resolution: {integrity: sha512-l2RX+0Hw831WrnvnuWsBPT5ipG7hP+Q24DiN5kUt/Afi7kaO7p6eUnl/BmhbJIS4ySpw0hjtJ4lcEkpy2VAYgg==}
+
   '@iconify-json/ri@1.2.5':
     resolution: {integrity: sha512-kWGimOXMZrlYusjBKKXYOWcKhbOHusFsmrmRGmjS7rH0BpML5A9/fy8KHZqFOwZfC4M6amObQYbh8BqO5cMC3w==}
 
@@ -279,6 +288,9 @@ packages:
 
   '@iconify-json/solar@1.2.2':
     resolution: {integrity: sha512-lcTb6DWL4HZObiY1W3fHfuxxuQHUc6CFHFeywKEx7Ry0k+dU6POZCMC7oVLr0F8vuf+KgaQ3oOoGO/yFzOwrNg==}
+
+  '@iconify-json/tdesign@1.2.8':
+    resolution: {integrity: sha512-Q/Ty43etGvXFkEVLYOW2cRaQFbjZoXcOvmOktJRludaN9SX5NeA86VvpriHAfsnsKnRGh0udLy8UscA5JumZKg==}
 
   '@iconify/tools@4.1.2':
     resolution: {integrity: sha512-q6NzLQYEN9zkDfcyBqD3vItHcZw97w/s++3H3TBxUORr57EfHxj6tOW6fyufDjMq+Vl56WXWaPx1csBPYlI5CA==}
@@ -2379,6 +2391,10 @@ snapshots:
 
   '@floating-ui/utils@0.2.9': {}
 
+  '@iconify-json/basil@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/ri@1.2.5':
     dependencies:
       '@iconify/types': 2.0.0
@@ -2388,6 +2404,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/solar@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/tdesign@1.2.8':
     dependencies:
       '@iconify/types': 2.0.0
 

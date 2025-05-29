@@ -1,0 +1,111 @@
+---
+import { Icon } from "astro-icon/components";
+import Heading from "../components/Heading.astro";
+import Layout from "../layouts/Layout.astro";
+import Input from "../components/contact/Input.astro";
+---
+
+<Layout title="Əlaqə">
+  <Heading title="Əlaqə" />
+  <main
+    class="container flex flex-col mx-auto pb-19 lg:pb-32 pt-9 lg:pt-15 gap-15"
+  >
+    <section
+      class="grid items-center grid-cols-1 lg:grid-cols-2 max-lg:gap-7.5"
+    >
+      <div class="flex flex-col gap-5 lg:gap-9 max-lg:px-5">
+        <div class="flex items-center gap-3 lg:gap-4.5">
+          <Icon name="tdesign:location-filled" color="#346E65" size={32} />
+          <span class="text-xl font-medium tracking-wider"
+            >Bakı ş., Nərimanov ray. 5B</span
+          >
+        </div>
+        <a href="tel:+994995553644" class="flex items-center gap-3 lg:gap-4.5">
+          <Icon name="solar:phone-bold" size={32} color="#346E65" />
+          <span class="text-xl font-medium tracking-wider">
+            +994 99 555 36 44
+          </span>
+        </a>
+        <a
+          href="mailto:info@algroup.com"
+          class="flex items-center gap-3 lg:gap-4.5"
+        >
+          <Icon name="basil:envelope-solid" size={32} color="#346E65" />
+          <span class="text-xl font-medium tracking-wider">
+            info@algroup.com
+          </span>
+        </a>
+        <div
+          class="flex items-center gap-6 lg:gap-7.5 [&>a]:text-[#363131] [&>a]:hover:text-[#346E65] [&>a]:duration-300 max-lg:mt-2.5"
+        >
+          <a href="https://www.facebook.com/" target="_blank">
+            <Icon name="ri:facebook-fill" size={32} />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <Icon name="ri:linkedin-fill" size={32} />
+          </a>
+          <a href="https://www.x.com/" target="_blank">
+            <Icon name="ri:twitter-fill" size={32} />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <Icon name="ri:instagram-line" size={32} />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <Icon name="si:youtube-line" size={32} />
+          </a>
+        </div>
+      </div>
+      <div class="w-full h-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.946766691083!2d49.861086076939316!3d40.41003005604562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4600664c97%3A0x3871b29144bdd1e!2sAynal%C4%B1%20Plaza!5e0!3m2!1sen!2saz!4v1748517334364!5m2!1sen!2saz"
+          class="size-full"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <section class="max-lg:px-5">
+      <h1
+        class="mb-2.5 lg:mb-5 text-3xl font-semibold tracking-wider text-[#0E1911] max-lg:text-center"
+      >
+        Şikayət və təkliflər
+      </h1>
+      <h2 class="text-base text-[#303030] max-lg:text-center tracking-wider">
+        Şikayət və təkliflərinizi bizimlə bölüşün.
+      </h2>
+      <form
+        method="POST"
+        action=""
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-7.5 lg:gap-y-6 mt-5.5 lg:mt-6.5"
+      >
+        <Input label="Ad, soyad" placeholder="Adınız və Soyadınız" id="name" />
+        <Input label="Şəhər" placeholder="Bakı, Sumqayıt…" id="city" />
+        <Input
+          label="Telefon"
+          placeholder="+994 50 999 99 99"
+          id="phone"
+          type="tel"
+        />
+        <Input
+          label="E-mail"
+          placeholder="E-mail ünvanınızı daxil edin"
+          id="email"
+          type="email"
+        />
+        <div class="flex flex-col gap-3 lg:col-span-2">
+          <label class="text-base text-[#303030]" for="message"> Qeyd </label>
+          <textarea
+            placeholder="Əlavə qeydləri daxil edin"
+            class="text-sm focus:outline-0 bg-[#F9F9F9] lg:min-h-30 py-4 px-3 rounded-md placeholder:text-[#6F6F6F]"
+            id="message"></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-[#346E65] text-white rounded-md text-lg font-medium py-3.5 lg:col-span-2 lg:w-1/2 lg:ms-auto max-lg:mt-1"
+        >
+          Göndər
+        </button>
+      </form>
+    </section>
+  </main>
+</Layout>
