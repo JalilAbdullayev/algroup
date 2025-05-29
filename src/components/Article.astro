@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import articleImg from "../assets/article.jpg";
+import arrowRightGreen from "../assets/arrow-right-green.svg";
+---
+
+<a href="#" class="lg:odd:mt-7.5 flex flex-col gap-2.5 lg:gap-5">
+  <Image src={articleImg} alt="article" loading="eager" class="rounded-md" />
+  <h3 class="text-lg font-medium tracking-wider">Bağlar necə salınır?</h3>
+  <div class="font-light text-base tracking-wider text-[#363131]">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s...
+  </div>
+  <div class="flex items-center gap-1.5">
+    <h5 class="text-base tracking-wider text-[#346E65]">Ətraflı</h5>
+    <Image src={arrowRightGreen} alt="arrow-right" />
+  </div>
+</a>
