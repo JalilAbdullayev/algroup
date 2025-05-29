@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import service from "../assets/service.jpg";
+import arrowRight from "../assets/arrow-right.svg";
+---
+
+<a href="#" class="h-52.5 lg:h-150 relative group">
+  <Image
+    src={service}
+    alt="service"
+    loading="eager"
+    class="object-cover h-full"
+  />
+  <div
+    class="border-[2px] border-white absolute inset-5 lg:inset-12.5 opacity-0 group-hover:opacity-100 duration-300"
+  >
+    <div class="relative size-full">
+      <div
+        class="absolute bottom-5 lg:bottom-7.5 ms-5 lg:ms-7.5 flex items-center gap-2.5"
+      >
+        <h5 class="text-lg font-semibold tracking-wider text-white">
+          Bağçılıq
+        </h5>
+        <Image src={arrowRight} alt="arrow-right" />
+      </div>
+    </div>
+  </div>
+</a>
