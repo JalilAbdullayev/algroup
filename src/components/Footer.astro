@@ -5,13 +5,13 @@ import { Icon } from "astro-icon/components";
 const year = new Date().getFullYear();
 ---
 
-<footer class="bg-[#363131] pt-7.5 md:pt-10 pb-14.5 md:pb-6 max-md:px-5">
+<footer class="bg-[#363131] pt-7.5 lg:pt-10 pb-14.5 lg:pb-6 max-lg:px-5">
   <div class="container mx-auto">
     <div class="flex items-center justify-between">
-      <a href="/" class="max-md:hidden">
+      <a href="/" class="max-lg:hidden">
         <Image src={logo} alt="logo" width={180} height={180} loading="eager" />
       </a>
-      <div class="flex flex-col items-end gap-10.5 md:gap-11">
+      <div class="flex flex-col items-end gap-10.5 lg:gap-11">
         <div>
           <a
             href="#"
@@ -22,7 +22,7 @@ const year = new Date().getFullYear();
           </a>
         </div>
         <div
-          class="[&>a]:text-lg [&>a]:text-white flex items-center gap-12 max-md:flex-wrap [&>a]:hover:text-[#346E65] [&>a]:duration-300"
+          class="[&>a]:text-lg [&>a]:text-white flex items-center gap-12 max-lg:flex-wrap [&>a]:hover:text-[#346E65] [&>a]:duration-300"
         >
           <a href="#"> Haqqımızda </a>
           <a href="#"> Məhsullar </a>
@@ -32,14 +32,14 @@ const year = new Date().getFullYear();
         </div>
       </div>
     </div>
-    <hr class="bg-[#F9F9F9] border-none h-px max-md:mt-7.5" />
+    <hr class="bg-[#F9F9F9] border-none h-px max-lg:mt-7.5" />
     <div
-      class="flex items-center justify-center text-sm tracking-wider text-white md:justify-between md:text-base pt-7"
+      class="flex items-center justify-center text-sm tracking-wider text-white lg:justify-between lg:text-base pt-7"
     >
-      <div class="md:hidden"></div>
+      <div class="lg:hidden"></div>
       <p class="font-[Montserrat]">&copy; {year} <a href="/">AL Group</a></p>
       <div
-        class="flex items-center gap-5 [&>a]:hover:text-[#346E65] [&>a]:duration-300 max-md:hidden"
+        class="flex items-center gap-5 [&>a]:hover:text-[#346E65] [&>a]:duration-300 max-lg:hidden"
       >
         <a href="https://www.facebook.com/" target="_blank">
           <Icon name="ri:facebook-fill" size={24} />

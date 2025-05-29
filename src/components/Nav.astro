@@ -10,22 +10,22 @@ import { Icon } from "astro-icon/components";
   x-data="{open: false}"
   x-init="window.innerWidth < 768 ? open = false : open = true"
   @click.away="window.innerWidth < 768 ? open = false : open = true"
-  x-bind:class="`relative max-md:px-5 max-md:pt-5 ${open ? 'max-md:bg-[#F1F5F7] max-md:h-screen' : 'max-md:bg-[#F5F5F7]'}`"
+  x-bind:class="`relative max-lg:px-5 max-lg:pt-5 ${open ? 'max-lg:bg-[#F1F5F7] max-lg:h-screen' : 'max-lg:bg-[#F5F5F7]'}`"
 >
   <div
-    class="container flex items-center mx-auto max-md:flex-col max-md:gap-5 md:justify-between max-md:flex-wrap"
+    class="container flex items-center mx-auto max-lg:flex-col max-lg:gap-5 lg:justify-between max-lg:flex-wrap"
   >
     <div class="flex items-center justify-between w-full">
       <a href="/">
         <Image
           src={logo}
           alt="logo"
-          class="size-17.5 md:size-45"
+          class="size-17.5 lg:size-45"
           loading="eager"
         />
       </a>
       <div
-        class="flex items-center gap-5 text-base [&>a]:hover:text-[#346E65] [&>a]:hover:underline [&>a]:duration-300 md:hidden"
+        class="flex items-center gap-5 text-base [&>a]:hover:text-[#346E65] [&>a]:hover:underline [&>a]:duration-300 lg:hidden"
         x-show="open"
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0"
@@ -38,7 +38,7 @@ import { Icon } from "astro-icon/components";
         <a href="#">Ru</a>
         <a href="#">En</a>
       </div>
-      <button type="button" @click="open = !open" class="md:hidden">
+      <button type="button" @click="open = !open" class="lg:hidden">
         <Image src={mobileNav} alt="menu" loading="eager" x-show="!open" />
         <Icon name="ri:close-line" size={24} color="#346E65" x-show="open" />
       </button>
@@ -51,25 +51,25 @@ import { Icon } from "astro-icon/components";
       x-transition:leave="transition ease-in duration-300"
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
-      class="flex flex-col gap-5 md:gap-6 max-md:w-full"
+      class="flex flex-col gap-5 lg:gap-6 max-lg:w-full"
     >
-      <div class="flex justify-between md:items-center max-md:flex-col">
-        <form action="#" class="max-w-sm max-md:min-w-full join">
+      <div class="flex justify-between lg:items-center max-lg:flex-col">
+        <form action="#" class="max-w-sm max-lg:min-w-full join">
           <input
             type="search"
             name="search"
-            class="input join-item border-0 py-3.5 rounded-md focus:outline-none bg-white! max-md:bg-[#F1F1F1] text-sm tracking-wider font-light"
+            class="input join-item border-0 py-3.5 rounded-md focus:outline-none bg-white! max-lg:bg-[#F1F1F1] text-sm tracking-wider font-light"
             placeholder="Axtar"
           />
           <button
             type="submit"
-            class="btn btn-text join-item rounded-md py-2.5 px-5 md:px-6 bg-white! max-md:bg-[#F1F1F1] opacity-80"
+            class="btn btn-text join-item rounded-md py-2.5 px-5 lg:px-6 bg-white! max-lg:bg-[#F1F1F1] opacity-80"
           >
             <Icon name="si:search-line" size={24} color="#346E65" class="opacity-80" />
           </button>
         </form>
         <div
-          class="flex items-center gap-5 text-base [&>a]:hover:text-[#346E65] [&>a]:hover:underline [&>a]:duration-300 max-md:hidden"
+          class="flex items-center gap-5 text-base [&>a]:hover:text-[#346E65] [&>a]:hover:underline [&>a]:duration-300 max-lg:hidden"
         >
           <a href="#" class="underline text-[#346E65]">Az</a>
           <a href="#">Ru</a>
@@ -77,14 +77,14 @@ import { Icon } from "astro-icon/components";
         </div>
       </div>
       <div
-        class="flex gap-3 text-lg md:items-center md:gap-15 max-md:flex-col md:text-base [&>a]:hover:text-[#346E65] [&>a]:duration-300"
+        class="flex gap-3 text-lg lg:items-center lg:gap-15 max-lg:flex-col lg:text-base [&>a]:hover:text-[#346E65] [&>a]:duration-300"
       >
         <a href="#">Haqqımızda</a>
         <a href="#">Məhsullar</a>
         <a href="#">Blog</a>
         <a href="#">Qalereya</a>
         <a href="#">Əlaqə</a>
-        <div class="flex items-center gap-5 mt-2 md:hidden">
+        <div class="flex items-center gap-5 mt-2 lg:hidden">
           <a href="https://www.facebook.com/" target="_blank">
             <Icon name="ri:facebook-fill" size={24} />
           </a>
@@ -101,7 +101,7 @@ import { Icon } from "astro-icon/components";
             <Icon name="si:youtube-line" size={26} />
           </a>
         </div>
-        <div class="flex items-center gap-3 md:hidden">
+        <div class="flex items-center gap-3 lg:hidden">
           <Icon name="solar:phone-bold" size={24} color="#346E65" />
           <a href="tel:+994505553644" class="text-base">+994 50 555 36 44</a>
         </div>
