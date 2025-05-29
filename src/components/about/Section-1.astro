@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import about2 from "../../assets/about-2.jpg";
+---
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-7.5 pb-6">
+  <div>
+    <Image src={about2} alt="about" loading="eager" class="rounded-md" />
+  </div>
+  <div class="flex flex-col gap-9">
+    <div class="text-base font-light tracking-wider text-[#363131]">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </div>
+    <div class="flex items-center gap-25">
+      <div>
+        <h3 class="text-4xl font-semibold text-[#346E65]">300</h3>
+        <h4 class="text-base font-medium tracking-wider">Meyvə bağları</h4>
+      </div>
+      <div>
+        <h3 class="text-4xl font-semibold text-[#346E65]">600</h3>
+        <h4 class="text-base font-medium tracking-wider">İşçi heyəti</h4>
+      </div>
+    </div>
+  </div>
+</section>
