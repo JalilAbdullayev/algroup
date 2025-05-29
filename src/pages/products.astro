@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import Product from "../components/Product.astro";
+---
+
+<Layout title="Products">
+  <Heading title="Məhsullar" />
+  <main
+    class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto lg:gap-x-17.5 gap-x-9 gap-y-7.5 lg:gap-y-13 py-12.5 lg:pt-15 lg:pb-35 max-lg:px-5"
+  >
+    <Product />
+    <Product />
+    <Product />
+    <Product />
+  </main>
+</Layout>

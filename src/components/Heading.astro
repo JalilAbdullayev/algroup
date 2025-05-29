@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import hero from "../assets/hero.png";
+
+interface Props {
+  title: string;
+}
+
+const { title = "AL Group" } = Astro.props;
+---
+
+<header class="bg-[#F5F7F7] max-lg:px-5 max-lg:pt-7.5">
+  <div
+    class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-between flex-wrap"
+  >
+    <h2 class="text-2xl lg:text-3xl font-bold tracking-wider">{title}</h2>
+    <div class="lg:w-97 w-58 lg:h-88 h-53 ms-auto lg:mx-auto">
+      <Image src={hero} alt="hero" loading="eager" />
+    </div>
+  </div>
+</header>
